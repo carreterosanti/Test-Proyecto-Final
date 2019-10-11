@@ -16,7 +16,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Link Github: Test Proyecto Final
+          Link Github: Test Proyecto Final - Carretero y Covelli
         </a>
       </header>
     </div>
