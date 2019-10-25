@@ -1,24 +1,18 @@
 import React from "react";
-import logo from "./logo.svg";
+
 import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./node_modules/react-grid-layout/css/styles.css";
+import "./node_modules/react-resizable/css/styles.css";
+import NavBar from "./components/NavBar";
+import MainSpace from "./components/MainSpace";
+import MyFirstGrid from "./components/MyFirstGrid";
+import TestProyectoFinal from "./components/TestProyectoFinal";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://github.com/carreterosanti/Test-Proyecto-Final"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Link Github: Test Proyecto Final - Carretero y Covelli
-        </a>
-      </header>
+      <TestProyectoFinal />
     </div>
   );
 }
