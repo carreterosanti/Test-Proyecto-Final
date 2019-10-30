@@ -24,3 +24,26 @@
 body > #root > div {
   height: 100vh;
 }
+
+/* CSS TestLayout */
+
+.nav-text-logo {
+  font-size: 17px;
+  color: white;
+  padding: 10px 15px;
+  text-align: left;
+  margin-bottom: 0px;
+}
+
+.in-body {
+  height: 100vh;
+}
+
+nav {
+  background-color: #282c34;
+}
+
+main {
+  background-color: grey;
+  height: calc(100vh - 40px);
+}

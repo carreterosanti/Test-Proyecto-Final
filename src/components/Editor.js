@@ -8,7 +8,7 @@ function Editor() {
 
   return (
     <div>
-      <AceEditor />
+      <AceEditor width="100%" />
     </div>
   );
 }

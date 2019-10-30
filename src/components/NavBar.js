@@ -1,20 +1,21 @@
 import React from "react";
-import Navbar from "react-bootstrap/Navbar";
 
 function NavBar() {
   return (
-    <Navbar bg="dark" variant="dark">
-      <Navbar.Brand href="#home">
-        <img
-          alt=""
-          src="/logo.svg"
-          width="30"
-          height="30"
-          className="d-inline-block align-top"
-        />
-        {"Test Proyecto Final Carretero-Covelli"}
-      </Navbar.Brand>
-    </Navbar>
+    <div
+      style={{ height: "5%", backgroundColor: "#1D232A", alignItems: "center" }}
+    >
+      <a
+        style={{
+          color: "white",
+          float: "left",
+          padding: "0.5%",
+          backgroundColor: "blue"
+        }}
+      >
+        Test Proyecto Carretero-Covelli
+      </a>
+    </div>
   );
 }
 
