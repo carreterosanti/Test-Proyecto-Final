@@ -60,7 +60,17 @@ export default function TestLayout() {
           </div>
 
           <div className="div-r">
-            <div className="div-interactive-view"></div>
+            <div className="div-interactive-view div-centralizar-contenido">
+              <h4>
+                <strong>Vista Interactiva Estructuras de Datos</strong>
+              </h4>
+              <br />
+              <p>
+                Donde sera prosible visualizar las estructuras de datos
+                declarados con sus valores iniciales y el cambio de los mismos
+                durante su ejecución
+              </p>
+            </div>
 
             <div className="div-play-pause-stop">
               <img
@@ -82,7 +92,17 @@ export default function TestLayout() {
               />
             </div>
 
-            <div className="div-data-base"></div>
+            <div className="div-test-base div-centralizar-contenido">
+              <h4>
+                <strong>Vista Banco de Test</strong>
+              </h4>
+              <br />
+              <p>
+                Donde se presetara una lista de distintos casos de ejemplo
+                especificos de la consigna, los cuales seran testeados al
+                momento de ejecutar la solucion propuesta por el usuario.
+              </p>
+            </div>
           </div>
         </div>
       </main>

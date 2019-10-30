@@ -46,7 +46,7 @@ nav {
 }
 
 .profile-img {
-  margin: 0px 20px;
+  margin: 5px 20px;
   height: 20px;
   width: 20px;
 }
@@ -56,7 +56,7 @@ nav {
 }
 
 .vertical-splitter {
-  --main-color: #464646;
+  --main-color: #242424;
   background-color: var(--main-color);
   height: calc(100vh - 37.6px);
   display: flex;
@@ -122,15 +122,31 @@ nav {
   position: relative;
 }
 
+h4 {
+  color: white;
+}
+
+p {
+  color: white;
+}
+
 .div-interactive-view {
-  background-color: #d0cee2;
+  background-color: #765ca1;
   height: 60%;
   width: 100%;
   margin-bottom: 3px;
 }
 
-.div-data-base {
-  background-color: #cddfcc;
+.div-centralizar-contenido {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 75px;
+}
+
+.div-test-base {
+  background-color: #009688;
   height: 40%;
   width: 100%;
 }
@@ -138,10 +154,11 @@ nav {
 .div-play-pause-stop {
   position: absolute;
   top: 57%;
-  left: 72%;
+  left: 30vw;
+  margin-right: 10px;
   border: none;
-  width: 25%;
-  height: 6%;
+  width: 150px;
+  height: 45px;
   background-color: #ffffff;
   box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.75);
   border-radius: 500px;
