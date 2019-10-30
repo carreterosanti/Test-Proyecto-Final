@@ -27,62 +27,135 @@ body > #root > div {
 
 /* CSS TestLayout */
 
+nav {
+  background-color: #282c34;
+}
+
+.nav-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .nav-text-logo {
-  font-size: 17px;
+  font-size: 15px;
   color: white;
   padding: 10px 15px;
   text-align: left;
   margin-bottom: 0px;
 }
 
+.profile-img {
+  margin: 0px 20px;
+  height: 20px;
+  width: 20px;
+}
+
 .in-body {
   height: 100vh;
 }
 
-nav {
-  background-color: #282c34;
-}
-
 .vertical-splitter {
-  background-color: grey;
-  height: calc(100vh - 40px);
+  --main-color: #464646;
+  background-color: var(--main-color);
+  height: calc(100vh - 37.6px);
   display: flex;
+  justify-content: flex-end;
+  padding-top: 5px;
 }
 
 .div-l {
-  background-color: grey;
+  background-color: var(--main-color);
   width: 58vw;
   padding: 3px;
-}
-
-.div-consigna {
-  background-color: #f5f5f5;
-  height: 20%;
-  width: 100%;
   margin-bottom: 3px;
 }
 
-.div-editor {
+.div-consigna-expanded {
+  background-color: #ffffff;
+  height: 20%;
+  width: 100%;
+  margin-bottom: 3px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.div-consigna-contract {
+  background-color: #ffffff;
+  height: 5%;
+  width: 100%;
+  margin-bottom: 3px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.h3-consigna {
+  font-size: medium;
+  text-align: left;
+  padding: 8px;
+  margin-right: 0px;
+}
+
+.profile-img {
+  margin-top: 8px;
+  height: 20px;
+  width: 20px;
+}
+
+.div-editor-expanded {
+  background-color: black;
+  height: 95%;
+  width: 100%;
+}
+
+.div-editor-contract {
   background-color: black;
   height: 80%;
   width: 100%;
 }
 
 .div-r {
-  background-color: grey;
+  background-color: var(--main-color);
   width: 42vw;
   padding: 3px;
+  margin-bottom: 3px;
+  position: relative;
 }
 
 .div-interactive-view {
-  background-color: #f7edf9;
+  background-color: #d0cee2;
   height: 60%;
   width: 100%;
   margin-bottom: 3px;
 }
 
 .div-data-base {
-  background-color: lightgreen;
+  background-color: #cddfcc;
   height: 40%;
   width: 100%;
+}
+
+.div-play-pause-stop {
+  position: absolute;
+  top: 57%;
+  left: 72%;
+  border: none;
+  width: 25%;
+  height: 6%;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.75);
+  border-radius: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 2px;
+}
+
+.medium-icon {
+  height: 96%;
+  margin: 0px 6px;
+}
+
+.small-icon {
+  height: 80%;
 }
