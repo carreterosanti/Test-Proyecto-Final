@@ -3,7 +3,7 @@ import AceEditor from "react-ace";
 import "ace-builds/src-noconflict/theme-dracula";
 
 export default function TestLayout() {
-  const [isConsignaExpand, setConsignaExpand] = useState(true);
+  const [isConsignaExpand, setConsignaExpand] = useState(false);
 
   const handlerConsigna = () => {
     if (isConsignaExpand) {
@@ -72,24 +72,26 @@ export default function TestLayout() {
               </p>
             </div>
 
-            <div className="div-play-pause-stop">
-              <img
-                className="small-icon"
-                src={require("./images/pause-icon.png")}
-                alt="Boton Play"
-              />
+            <div className="div-contenedor-capsula">
+              <div className="div-play-pause-stop">
+                <img
+                  className="small-icon"
+                  src={require("./images/pause-icon.png")}
+                  alt="Boton Play"
+                />
 
-              <img
-                className="medium-icon"
-                src={require("./images/play-icon.png")}
-                alt="Boton Play"
-              />
+                <img
+                  className="medium-icon"
+                  src={require("./images/play-icon.png")}
+                  alt="Boton Play"
+                />
 
-              <img
-                className="small-icon"
-                src={require("./images/stop-icon.png")}
-                alt="Boton Play"
-              />
+                <img
+                  className="small-icon"
+                  src={require("./images/stop-icon.png")}
+                  alt="Boton Play"
+                />
+              </div>
             </div>
 
             <div className="div-test-base div-centralizar-contenido">

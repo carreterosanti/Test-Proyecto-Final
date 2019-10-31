@@ -22,7 +22,7 @@
 }
 
 body > #root > div {
-  height: 100vh;
+  min-height: 100vh;
 }
 
 /* CSS TestLayout */
@@ -52,23 +52,49 @@ nav {
 }
 
 .in-body {
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .vertical-splitter {
   --main-color: #242424;
   background-color: var(--main-color);
-  height: calc(100vh - 37.6px);
+  min-height: calc(100vh - 37.6px);
+  height: auto;
   display: flex;
-  justify-content: flex-end;
-  padding-top: 5px;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .vertical-splitter {
+    --main-color: #242424;
+    background-color: var(--main-color);
+    min-height: calc(100vh - 37.6px);
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .div-l {
+    background-color: var(--main-color);
+    height: calc(100vh - 37.6px);
+    width: 100vw;
+    padding: 3px;
+  }
+
+  .div-r {
+    background-color: var(--main-color);
+    height: calc(100vh);
+    width: 100vw;
+    padding: 3px;
+    position: relative;
+  }
 }
 
 .div-l {
   background-color: var(--main-color);
-  width: 58vw;
+  min-height: 100%;
+  min-width: 58vw;
   padding: 3px;
-  margin-bottom: 3px;
 }
 
 .div-consigna-expanded {
@@ -114,11 +140,14 @@ nav {
   width: 100%;
 }
 
+.ace_content {
+  height: 100%;
+}
+
 .div-r {
   background-color: var(--main-color);
-  width: 42vw;
+  min-width: 42vw;
   padding: 3px;
-  margin-bottom: 3px;
   position: relative;
 }
 
@@ -132,7 +161,7 @@ p {
 
 .div-interactive-view {
   background-color: #765ca1;
-  height: 60%;
+  min-height: 60%;
   width: 100%;
   margin-bottom: 3px;
 }
@@ -147,15 +176,27 @@ p {
 
 .div-test-base {
   background-color: #009688;
-  height: 40%;
+  min-height: 40%;
   width: 100%;
+}
+
+.div-contenedor-capsula {
+  position: absolute;
+  top: 55%;
+  left: auto;
+  border: none;
+  width: calc(100% - 6px);
+  height: 10%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 25px;
 }
 
 .div-play-pause-stop {
   position: absolute;
-  top: 57%;
-  left: 30vw;
-  margin-right: 10px;
+  top: auto;
+  left: auto;
   border: none;
   width: 150px;
   height: 45px;
@@ -169,10 +210,12 @@ p {
 }
 
 .medium-icon {
-  height: 96%;
+  width: 32px;
+  height: 32px;
   margin: 0px 6px;
 }
 
 .small-icon {
-  height: 80%;
+  width: 26px;
+  height: 26px;
 }
