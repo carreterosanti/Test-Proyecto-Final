@@ -23,6 +23,7 @@
 
 body > #root > div {
   min-height: 100vh;
+  background-color: var(--main-color);
 }
 
 /* CSS TestLayout */
@@ -52,6 +53,7 @@ nav {
 }
 
 .in-body {
+  background-color: var(--main-color);
   min-height: 100vh;
 }
 
@@ -68,7 +70,7 @@ nav {
   .vertical-splitter {
     --main-color: #242424;
     background-color: var(--main-color);
-    min-height: calc(100vh - 37.6px);
+    min-height: calc((100vh - 37.6px) * 2);
     height: auto;
     display: flex;
     flex-direction: column;
